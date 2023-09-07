@@ -6,17 +6,18 @@ import circle from "..//assets/image-removebg-preview - 2023-02-19T191726.svg";
 
 const AboutUs = () => {
   return (
-    <div className="h-[100vh] w-[100vw]  flex items-center ">
-      <div className="w-[40vw] h-[80vh] bg-black  flex justify-center items-center text-[30px] text-white">
-        images
+    <div className="h-[100%] w-[100vw]  flex items-center justify-around mt-56 ">
+      <div className="w-[40vw] h-[80vh]   flex justify-center items-center text-[30px] text-black">
+        work in progress
       </div>
-      <div className="w-[60vw] h-[70vh]  flex flex-col justify-center ">
+
+      <div className="w-[50vw] h-[70vh]  flex flex-col justify-end bitems-start font-poppins">
         <div className="h-[67px]  w-[241px] text-[48px] ml-16">
           <Partners name="About Us" />
         </div>
 
         <div className="  w-[40vw] mt-5 ml-16 ">
-          <p className="font-[regular] font-semibold">
+          <p className="font-poppins font-semibold">
             Lorem ipsum dolor sit amet consectetur. Maecenas dignissim fringilla
             faucibus urna non cum. Consequat eget feugiat rhoncus nunc amet
             aliquet nunc. Arcu scelerisque ullamcorper curabitur morbi elementum
@@ -25,7 +26,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="mt-10 ml-12 font-[regular] flex justify-between ">
+        <div className="mt-10 ml-12 font-poppins flex justify-between ">
           <Button name="Know More" />
           <img className="h-[250px]" src={circle} alt="" />
         </div>

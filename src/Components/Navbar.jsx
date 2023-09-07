@@ -5,13 +5,13 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="w-[100vw] bg-[#ffffff] h-[110px] flex justify-center items-center  font-[popins] shadow-lg">
-      <nav className="w-[90vw]  h-[75px] flex justify-between items-center">
-        <div className=" flex justify-center items-center">
-          <img className="h-28 w-36" src={logo} alt="" />
-        </div>
+    <div className=" flex justify-center w-screen">
+      <div className="  w-[90vw] flex flex-wrap p-4 flex-col md:flex-row items-center ">
+        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img className="h-28 w-36" src={logo} />
+        </a>
 
-        <div className=" flex justify-center items-center gap-8 text-[3vh]">
+        <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center font-poppins gap-8 text-[3vh] font-medium">
           <a href="#">
             <span className="text-red-600">About Us</span>
           </a>
@@ -20,10 +20,8 @@ const Navbar = () => {
           <a href="#">Testimonial</a>
           <a href="#">Contact Us</a>
         </div>
-        <div>
-          <Button name="Get Started"/>
-        </div>
-      </nav>
+        <Button name="Get Started" />
+      </div>
     </div>
   );
 };
