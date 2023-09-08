@@ -1,30 +1,44 @@
 import React from "react";
-import Partners from "./Partners";
-import circle from "../assets/image-removebg-preview - 2023-02-19T191726.svg";
+
 import Cards from "./Cards";
+import images from "../assets/mobile app development 1.svg";
+import Partners from "./Partners";
 
 const Services = () => {
   return (
-    <div className="h-[70vh] w-[100vw] mt-20">
-      <div>
-        <Partners name="Our Available Services" />
-      </div>
+   
 
-      <div className="flex justify-around   relative">
-        
-        
-        <Cards name='Mobile App Development' content='We have extensive experience in developing mobile apps for many platforms. Our team of skilled developers can bring your app ideas. '/>
-        <Cards name='Web Development' contant='Our web development services involve design, creation, and website maintenance for our clients '/>
-        <Cards name='UI UX Design' content='Our web development services involve design, creation, and website maintenance for our clients satisfaction. '/>
-      </div>
-
-
-
-
-
-
-
-    </div>
+    <>
+    
+      <section className="mt-20 mb-20">
+      <Partners name='Our Available Services'/>
+        <div className="container px-6 m-auto">
+          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+            <div className="col-span-4">
+              <Cards
+                heading="Mobile App Development"
+                img={images}
+                content="We have extensive experience in developing mobile apps for many platforms. Our team of skilled developers can bring your app ideas. "
+              />
+            </div>
+            <div className="col-span-4">
+              <Cards
+                heading="Mobile Development"
+                img={images}
+                content="We have extensive experience in developing mobile apps for many platforms. Our team of skilled developers can bring your app ideas. "
+              />
+            </div>
+            <div className="col-span-4">
+              <Cards
+                heading="Mobile Development"
+                img={images}
+                content="We have extensive experience in developing mobile apps for many platforms. Our team of skilled developers can bring your app ideas. "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

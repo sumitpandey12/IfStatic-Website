@@ -1,6 +1,6 @@
 // import React from "react";
 import hero from "../assets/Hero.svg";
-import Navbar from "../Components/Navbar";
+
 import humanimg from "../assets/human.svg";
 import Button from "../Components/Button";
 import thred from "../assets/thread.svg";
@@ -9,7 +9,7 @@ import Blockimg from "../Components/Blockimg";
 
 const LandingPage = () => {
   return (
-    <div className=" w-[100%] h-[100%] relative  overflow-x-clip ">
+    <div className="  w-[100vw] relative  overflow-x-clip ">
       <div className="absolute z-[-1] h-[100vh] w-[100vw]">
         <img className="" src={hero} alt="heroimg" />
       </div>

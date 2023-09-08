@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const Footer = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+    
       <footer className="bg-[#333333] ">
         {/* max-w-screen-xl  ye class bhi add kr skte he apne hisab se */}
         <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 ">

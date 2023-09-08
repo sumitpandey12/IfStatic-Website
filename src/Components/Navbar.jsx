@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-center w-screen">
+    <div className=" flex justify-center ">
       <div className="  w-[90vw] flex flex-wrap p-4 flex-col md:flex-row items-center ">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img className="h-28 w-36" src={logo} />
