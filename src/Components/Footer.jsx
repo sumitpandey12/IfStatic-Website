@@ -1,37 +1,35 @@
 // import React from 'react'
 import logo from "../assets/Frame 1000002385.svg";
-import Navbar from "./Navbar";
 
 const Footer = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      <footer className="bg-[#333333] ">
+      <footer className="bg-[#333333]">
         {/* max-w-screen-xl  ye class bhi add kr skte he apne hisab se */}
-        <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 ">
+        <div className="mx-auto max-w-screen-2xl px-2 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-8 ">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
-            <div>
-              <div className="flex justify-center text-[#ffffff]sm:justify-start mb-10">
+            <div className="flex flex-col ">
+              <div className="flex justify-center text-[#ffffff] sm:justify-center ml-16 ">
                 <a href="">
-                  <img className="h-40 w-52" src={logo} alt="" />
+                  <img className="h-32 w-40 mr-40 sm:ml" src={logo} alt="" />
                 </a>
               </div>
 
-              <p className=" max-w-md text-center leading-relaxed text-[#ffffff] sm:max-w-xs sm:text-left ml-16 ">
-                We deliver innovative software solutions for businesses.
+              <p className=" max-w-md text-center text-[#ffffff] sm:max-w-xs sm:text-center ml-16  ">
+                We deliver innovative software <br /> solutions for businesses.
               </p>
 
-              <h1 className="text-2xl mt-6 font-bold  ml-16 text-[#ffffff] ">
+              <h1 className="text-2xl mt-6 font-bold sm:text-left ml-16 text-[#ffffff] ">
                 Follow Us
               </h1>
 
-              <ul className="mt-2 flex justify-center gap-6 sm:justify-start md:gap-8 ml-16">
+              <ul className="mt-2 flex justify-center gap-6 md:gap-8 sm:justify-center ml-16">
                 <li>
                   <a
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-[#ffffff] transition hover:text-teal-700/75"
+                    className="text-[#ffffff] transition hover:text-green-700/75"
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
@@ -54,7 +52,7 @@ const Footer = () => {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-[#ffffff] transition hover:text-teal-700/75"
+                    className="text-[#ffffff] transition hover:text-green-700/75"
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
@@ -77,7 +75,7 @@ const Footer = () => {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-[#ffffff] transition hover:text-teal-700/75"
+                    className="text-[#ffffff] transition hover:text-green-700/75"
                   >
                     <span className="sr-only">Twitter</span>
                     <svg
@@ -96,7 +94,7 @@ const Footer = () => {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-[#ffffff] transition hover:text-teal-700/75"
+                    className="text-[#ffffff] transition hover:text-green-700/75"
                   >
                     <span className="sr-only">GitHub</span>
                     <svg
@@ -120,10 +118,10 @@ const Footer = () => {
               <div className="text-center sm:text-left">
                 <p className="text-lg font-medium text-[#ffffff]"> Links</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       About Us
@@ -132,7 +130,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       Services
@@ -141,7 +139,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       Testimonials
@@ -150,7 +148,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       Contact Us
@@ -162,10 +160,10 @@ const Footer = () => {
               <div className="text-center sm:text-left">
                 <p className="text-lg font-medium text-[#ffffff]">Services</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       Web Development
@@ -174,7 +172,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       Mobile App Development
@@ -183,7 +181,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-[#ffffff] transition hover:text-gray-700/75"
+                      className="text-[#ffffff] transition hover:text-green-700/75"
                       href="/"
                     >
                       UI/UX Design
@@ -197,7 +195,7 @@ const Footer = () => {
                   Contact Info
                 </p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-6 space-y-3 text-sm">
                   <li>
                     <a
                       className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
@@ -281,16 +279,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-6 ">
-            <div className="text-center sm:flex sm:justify-center sm:text-left">
-              <p className="mt-4 font-poppins font-semibold text-[#ffffff] sm:order-first sm:mt-0 text-base">
-                &copy; 2022 IFStatic Technologies.
-              </p>
+          <div className="mt-6 text-center sm:flex sm:justify-center sm:text-left">
+            <p className="mt-4 font-poppins font-medium text-[#ffffff] sm:order-first sm:mt-0 text-base">
+              &copy; 2023 IFStatic Technologies.
+            </p>
 
-              <p className="text-base font-poppins font-semibold text-[#ffffff] ">
-                <span className="block sm:inline">All rights reserved.</span>
-              </p>
-            </div>
+            <p className="text-base font-poppins font-medium text-[#ffffff] ">
+              <span className="block sm:inline">All rights reserved.</span>
+            </p>
           </div>
         </div>
       </footer>

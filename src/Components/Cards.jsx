@@ -3,27 +3,21 @@
 
 const Cards = (props) => {
   return (
-    <div className="h-[50vh] w-[29vw] mt-5 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  p-10 block">
-      <div className=" flex justify-center p-10 ">
-        <img
-          className="rounded h-[80px] w-[160px] "
-          src=""
-          alt="img"
-        />
-      </div>
+    <>
+      <div className="overflow-hidden text-center rounded shadow-md text-slate-500 shadow-slate-200">
+        <figure className="p-8 flex justify-center  pb-9">
+          <img src={props.img} alt="" />
+        </figure>
 
-      <div className="w flex justify-center flex-col  text-center ">
-        <h5 className="mb-2 text-xl font-medium leading-tight text-black font-poppins">
-          {props.name}
-        </h5>
-
-        <div>
-          <p className="mb-4 text-base text-black font-poppins">
-            {props.content}
-          </p>
+        <div className="p-8 flex flex-col justify-center items-center">
+          <h3 className="mb-4 text-2xl font-bold text-[#0D0E13CC]">
+            {props.heading}
+          </h3>
+          <p>{props.star}</p>
+          <p className="text-[#0D0E13CC] w-80 font-normal text-lg ">{props.content}</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

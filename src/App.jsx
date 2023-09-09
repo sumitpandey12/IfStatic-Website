@@ -1,31 +1,64 @@
-// import React from "react";
-
+import React from "react";
 import Navbar from "./Components/Navbar";
 
+import CarouselLogo from "./Components/CarouselLogo";
+import AboutUs from "./Components/AboutUs";
 
 import Services from "./Components/Services";
-import LandingPage from "./Pages/LandingPage";
-import AboutUs from "./Components/AboutUs";
-import Footer from "./Components/Footer";
-import ContactUs from "./Components/ContactUs";
-import CompanyStatBar from "./Components/CompanyStatBar";
-import NewsLetter from "./Components/NewsLetter";
 
+import PortfolioComp from "./Components/PortfolioComp";
+import ClientCardComp from "./Components/ClientCardComp";
+import CompanyStatBar from "./Components/CompanyStatBar";
+import ContactUs from "./Components/ContactUs";
+import NewsLetter from "./Components/NewsLetter";
+import Footer from "./Components/Footer";
+import LandingPage from "./Pages/LandingPage";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <LandingPage />
-
-     
+      {/* <LandingPage /> */}
+      <CarouselLogo/>
       <AboutUs />
-
-      <Services />
-      <CompanyStatBar />
-      <ContactUs />
+       <Services />
+         <PortfolioComp />
+       <ClientCardComp />
+       <CompanyStatBar />
+        <ContactUs />
       <NewsLetter />
-      <Footer />
+      
+      <Footer /> 
+      
+     
+      
+     
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+     
+    
+      
+
+      
+     
+
+
+
+
+
+      
+     
     </div>
   );
 };
