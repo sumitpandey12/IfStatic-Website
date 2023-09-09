@@ -23,3 +23,10 @@ const Partners = (props) => {
 };
 
 export default Partners;
+
+
+
+
+
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laudantium accusamus officiis architecto molestias voluptatum modi vel labore dolorem odio commodi quos debitis beatae numquam cum at ipsam, tenetur nobis!Loremlore
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi deleniti, nam reiciendis iste explicabo eos consequatur consectetur ipsa neque quos similique! Impedit debitis, a provident corporis fugiat cupiditate ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minima et at voluptates dignissimos iste ipsum molestias nesciunt. Quibusdam nemo atque iste beatae dolor commodi eum cum suscipit quod debitis!
