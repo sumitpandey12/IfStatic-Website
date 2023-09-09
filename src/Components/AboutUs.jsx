@@ -8,7 +8,7 @@ import img from "..//assets/GroupAboutus.svg";
 const AboutUs = () => {
   return (
     <>
-      <div className=" flex flex-col overflow-hidden bg-gray-200 rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
+      <div className="  flex flex-col overflow-hidden mt-14 rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
         <figure className="flex-1">
           <img src={img} alt="card image" className="lg:h-[30rem] ml-28" />
         </figure>

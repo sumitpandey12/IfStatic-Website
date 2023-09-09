@@ -7,9 +7,9 @@ import { BsFillArrowRightCircleFill } from "react-icons/Bs";
 const NewsLetter = () => {
   return (
     <>
-      <section>
-        <div className="container px-6 m-auto  flex flex-col justify-center mt-10">
-          <div className="relative overflow-hidden bg-cover bg-no-repeat flex h-full right-16 top-[-60px]">
+      <section className="bg-yellow-300 h-full ">
+        <div className="container px-6 m-auto  flex flex-col justify-center mt-10 ">
+          <div className="relative overflow-hidden bg-cover bg-no-repeat flex h-full right-16 top-[60px]">
             <img src={bgimg} alt="" className="h-[300px]" />
 
             <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12  absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed   items-center">

@@ -18,13 +18,13 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <LandingPage />
+      {/* <LandingPage /> */}
       <CarouselLogo/>
       <AboutUs />
-       {/* <Services /> */}
-         {/* <PortfolioComp /> */}
-       {/* <ClientCardComp /> */}
-       {/* <CompanyStatBar /> */}
+       <Services />
+         <PortfolioComp />
+       <ClientCardComp />
+       <CompanyStatBar />
         <ContactUs />
       <NewsLetter />
       

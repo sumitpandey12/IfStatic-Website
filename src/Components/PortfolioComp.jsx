@@ -8,10 +8,10 @@ import circle from "../assets/image-removebg-preview - 2023-02-19T191726.svg";
 const PortfolioComp = () => {
   return (
     <>
-      {/* <Partners name="Portfolio, We Proud Of" /> */}
-      <section className="mt-10 flex flex-col justify-center items-center bg-purple-400">
-        <div className="container px-6 m-auto flex flex-col justify-center">
-          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12  bg-orange-400  ">
+      <section className=" flex flex-col justify-center items-center mt-16 mb-10 px-11">
+        <Partners name="Portfolio, We Proud Of" />
+        <div className="container px-6 m-auto ">
+          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-11 lg:content-center   py-20 ">
             <div className="col-span-4 lg:col-span-4 ">
               <PortfolioCard
                 heading="Expanse Tracker App"
