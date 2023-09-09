@@ -3,9 +3,9 @@ import Button from "./Button";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto pt-16 ">
+    <div className="container mx-auto p-16 ">
       <div className="lg:flex">
-        <div className="xl:w-2/5 lg:w-2/5 bg-[#642B73] py-16 xl:rounded-bl  xl:rounded-tr-none">
+        <div className="xl:w-2/5 lg:w-2/5 bg-[#642B73] py-16 xl:rounded-bl xl:items-center xl:flex xl:rounded-tr-none xl:py-24 rounded-tl-[25%]">
           <div className="xl:w-5/6 xl:px-0 px-8 mx-auto ">
             <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
               Contact us
@@ -88,7 +88,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="xl:w-3/5 lg:w-3/5 bg-[#642B73] h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br">
+        <div className="xl:w-3/5 lg:w-3/5 bg-[#642B73] h-full pt-5 pb-5 xl:pr-5 xl:pl-0 xl:py-24 rounded-tr  rounded-br-[25%]">
           <form id="contact" className="bg-white py-4 px-8  rounded-2xl ">
             <h1 className="text-4xl text-gray-800 font-extrabold mb-3">
               Get in touch

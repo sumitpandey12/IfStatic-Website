@@ -20,7 +20,7 @@ const Services = () => {
           <img
             src={circle}
             alt=""
-            className="absolute left-[27rem] top-[12rem]"
+            className="absolute left-[27rem] top-[12rem] "
           />
 
           <div className="container px-6 m-auto mt-6 ">

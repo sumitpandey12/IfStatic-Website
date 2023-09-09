@@ -13,53 +13,39 @@ import ContactUs from "./Components/ContactUs";
 import NewsLetter from "./Components/NewsLetter";
 import Footer from "./Components/Footer";
 import LandingPage from "./Pages/LandingPage";
+import ContactUsPage from "./Pages/ContactUsPage";
+import FeedBackPage from "./Pages/FeedBackPage";
+import Layout from "./Components/Layout";
+import AboutUsPage from "./Pages/AboutUsPage";
+import Layout2 from "./Components/Layout2";
+import UXDesignPage from "./Pages/UXDesignPage";
+import Layout3 from "./Components/Layout3";
+import WebDevelopmentPage from "./Pages/WebDevelopmentPage";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <>
+      {/* <Navbar /> */}
       {/* <LandingPage /> */}
-      <CarouselLogo/>
-      <AboutUs />
-       <Services />
-         <PortfolioComp />
-       <ClientCardComp />
-       <CompanyStatBar />
-        <ContactUs />
-      <NewsLetter />
-      
-      <Footer /> 
-      
-     
-      
-     
+      {/* <CarouselLogo />
+      <AboutUs /> */}
+      {/* <Services /> */}
+      {/* <PortfolioComp />
+      <ClientCardComp />
+      <CompanyStatBar />
+      <ContactUs />
+      <NewsLetter /> */}
 
+      {/* <Footer /> */}
 
-
-
-
-
-
-
-
-
-      
-      
-      
-     
-    
-      
-
-      
-     
-
-
-
-
-
-      
-     
-    </div>
+      {/* <ContactUsPage/> */}
+      {/* <FeedBackPage/> */}
+      {/* <Layout/> */}
+      {/* <AboutUsPage/> */}
+      {/* <Layout3/> */}
+      {/* <UXDesignPage/> */}
+      <WebDevelopmentPage/>
+    </>
   );
 };
 
