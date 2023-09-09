@@ -1,4 +1,5 @@
 import React from "react";
+// import { FaBeer } from 'react-icons/fa';
 
 const Button = (props) => {
   return (
@@ -11,10 +12,11 @@ const Button = (props) => {
       
      active:translate-x-[5px] transform-y-[5px] active:translate-y-3 active:shadow-none text-[#BC384A] 
      
-     inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap   text-sm font-medium tracking-wide  transition duration-300 hover:border-emerald-600 hover:text-emerald-600 focus:border-emerald-700 focus:text-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:text-emerald-300 disabled:shadow-none
+     inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap   text-sm font-medium tracking-wide  transition duration-300 hover:border-[#BC384A] hover:text-[#BC384A] focus:border-[#BC384A] focus:text-[#BC384A] focus-visible:outline-none disabled:cursor-not-allowed disabled:border-[#BC384A] disabled:text-[#BC384A] disabled:shadow-none
      "
       >
         {props.name}
+        {props.icon}
       </button>
     </div>
   );

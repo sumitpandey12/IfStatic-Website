@@ -9,13 +9,13 @@ const PortfolioCard = (props) => {
           <img src={props.img} alt="card image" className="aspect-video w-full" />
         </figure>
 
-        <div className="p-6">
-          <header className="mb-4">
-            <h3 className="text-xl font-medium text-slate-700">
+        <div className="p-6 ml-14 ">
+          <header className="mb-4 font-poppins">
+            <h3 className="text-2xl font-bold text-slate-700">
               {props.heading}
             </h3>
           </header>
-          <p>
+          <p className="text-black leading-relaxed">
           {props.content}
           </p>
         </div>

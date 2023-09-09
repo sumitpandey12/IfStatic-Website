@@ -18,16 +18,47 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <LandingPage/>
-      <CarouselLogo />
+      <LandingPage />
+      <CarouselLogo/>
       <AboutUs />
-      <Services />
-      <PortfolioComp />
-      <ClientCardComp />
-      <CompanyStatBar />
-      <ContactUs />
+       {/* <Services /> */}
+         {/* <PortfolioComp /> */}
+       {/* <ClientCardComp /> */}
+       {/* <CompanyStatBar /> */}
+        <ContactUs />
       <NewsLetter />
-      <Footer />
+      
+      <Footer /> 
+      
+     
+      
+     
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+     
+    
+      
+
+      
+     
+
+
+
+
+
+      
+     
     </div>
   );
 };
