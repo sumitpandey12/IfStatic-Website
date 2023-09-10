@@ -9,21 +9,21 @@ const Footer = () => {
         <div className="mx-auto max-w-screen-2xl px-2 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-8  mobile:text-center">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             <div className="flex flex-col ">
-              <div className="flex justify-center text-[#ffffff] sm:justify-center ml-16 ">
+              <div className="flex justify-center text-[#ffffff]  ">
                 <a href="">
-                  <img className="h-32 w-40 mr-40 sm:ml  mobile:ml-24" src={logo} alt="" />
+                  <img className="h-32 w-52" src={logo} alt="" />
                 </a>
               </div>
 
-              <p className=" max-w-md text-center text-[#ffffff] sm:max-w-xs sm:text-center ml-16  ">
+              <p className=" max-w-md text-center text-[#ffffff] sm:max-w-xs sm:text-center  ">
                 We deliver innovative software <br /> solutions for businesses.
               </p>
 
-              <h1 className="text-2xl mt-6 font-bold sm:text-left ml-16 mobile:text-center text-[#ffffff] ">
+              <h1 className="text-2xl mt-6 font-bold  text-center text-[#ffffff] ">
                 Follow Us
               </h1>
 
-              <ul className="mt-2 flex justify-center gap-6 md:gap-8 sm:justify-center ml-16">
+              <ul className="mt-2 flex justify-center gap-6 md:gap-8 sm:justify-center">
                 <li>
                   <a
                     href="/"

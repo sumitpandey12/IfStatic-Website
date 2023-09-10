@@ -11,6 +11,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfServices from "./Pages/TermsOfServices";
 import UXDesignPage from "./Pages/UXDesignPage";
 import WebDevelopmentPage from "./Pages/WebDevelopmentPage";
+import ClientCardComp from "./Components/ClientCardComp";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route index element={<LandingPage />} />
         <Route path="/LandingPage" element={<LandingPage />} />
+        <Route path="/Testimonial" element={<ClientCardComp />} />
         <Route path="/AboutUsPage" element={<AboutUsPage />} />
         <Route path="/FeedBackPage" element={<FeedBackPage />} />
         <Route

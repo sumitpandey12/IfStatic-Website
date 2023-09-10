@@ -5,10 +5,10 @@ const Layout4 = () => {
   return (
     <>
       <section>
-        <div className="container px-6 m-auto  h-36 mt-10 items-center mobile:h-[50vh]">
+        <div className="container lg:px-6 m-auto py-10 ">
           <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 xl:content-center">
-            <div className="col-span-4 md:col-span-8 lg:col-span-12 flex justify-between items-center mx-20">
-              <div className="col-span-4 lg:col-span-6 text-5xl font-semibold">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 flex lg:justify-between items-center lg:mx-20 mx-5 flex-col">
+              <div className="col-span-4 lg:col-span-6 lg:text-5xl text-2xl font-semibold">
                 Let s Discuss Your Project
               </div>
               <div className="col-span-4 lg:col-span-6">
