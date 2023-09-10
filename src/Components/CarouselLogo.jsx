@@ -28,7 +28,7 @@ export default function CarouselLogo() {
   return (
     <div className="container mx-auto">
       <Partners name="Our Trusted Partner" />
-      <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+      <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 mobile:py-3 px-4">
         {/* Carousel for desktop and large size devices */}
         <CarouselProvider
           className="lg:block hidden"
@@ -322,7 +322,7 @@ export default function CarouselLogo() {
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
           totalSlides={12}
-          visibleSlides={1}
+          visibleSlides={5}
           step={1}
           infinite={true}
         >
@@ -330,7 +330,7 @@ export default function CarouselLogo() {
             <ButtonBack
               role="button"
               aria-label="slide backward"
-              className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+              className="absolute z-30 left-0 ml- focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
               id="prev"
             >
               <img src={arrow1} alt="" className="h-8" />
@@ -457,7 +457,7 @@ export default function CarouselLogo() {
             <ButtonNext
               role="button"
               aria-label="slide forward"
-              className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 "
+              className="absolute z-30 right-0 mr- focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 "
               id="next"
             >
               <img src={arrow2} alt="" className="h-8 " />

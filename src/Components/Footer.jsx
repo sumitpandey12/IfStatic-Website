@@ -4,14 +4,14 @@ import logo from "../assets/Frame 1000002385.svg";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-[#333333]">
+      <footer className="bg-[#333333] ">
         {/* max-w-screen-xl  ye class bhi add kr skte he apne hisab se */}
-        <div className="mx-auto max-w-screen-2xl px-2 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-8 ">
+        <div className="mx-auto max-w-screen-2xl px-2 pb-6 pt-6 sm:px-6 lg:px-8 lg:pt-8  mobile:text-center">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             <div className="flex flex-col ">
               <div className="flex justify-center text-[#ffffff] sm:justify-center ml-16 ">
                 <a href="">
-                  <img className="h-32 w-40 mr-40 sm:ml" src={logo} alt="" />
+                  <img className="h-32 w-40 mr-40 sm:ml  mobile:ml-24" src={logo} alt="" />
                 </a>
               </div>
 
@@ -19,7 +19,7 @@ const Footer = () => {
                 We deliver innovative software <br /> solutions for businesses.
               </p>
 
-              <h1 className="text-2xl mt-6 font-bold sm:text-left ml-16 text-[#ffffff] ">
+              <h1 className="text-2xl mt-6 font-bold sm:text-left ml-16 mobile:text-center text-[#ffffff] ">
                 Follow Us
               </h1>
 
