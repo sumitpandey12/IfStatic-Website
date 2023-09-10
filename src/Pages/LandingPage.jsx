@@ -3,6 +3,7 @@ import hero from "../assets/Hero.svg";
 
 import humanimg from "../assets/human.svg";
 import Button from "../Components/Button";
+import reviewimg from "../assets/block.svg";
 import thred from "../assets/thread.svg";
 import circle from "../assets/image-removebg-preview - 2023-02-19T191726.svg";
 import Blockimg from "../Components/Blockimg";
@@ -69,12 +70,13 @@ const LandingPage = () => {
     //       </div>
     //     </div>
     //   </div>
-    // </> 
+    // </>
 
     <>
-    <Navbar/>
+      <Navbar />
+
       <section>
-        <div className="relative overflow-hidden bg-cover bg-no-repeat flex h-full">
+        <div className="relative overflow-hidden bg-cover bg-no-repeat flex h-full lg:mb-14">
           <img src={hero} alt="" />
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
             <div className="flex h-full ">
@@ -82,11 +84,11 @@ const LandingPage = () => {
                 <section>
                   <div className="container px-6 m-auto">
                     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-                      <div className="col-span-4 lg:col-span-7 flex flex-col text-start mt-16">
-                        <h1 className="mt-2 mb-6 text-5xl font-semibold tracking-tight md:text-6xl xl:text-7xl text-[#022252]">
+                      <div className="col-span-4 lg:col-span-7 flex flex-col text-start lg:mt-16 mt-4 ">
+                        <h1 className=" md:text-2xl  text-base lg:text-5xl font-semibold tracking-tight xl:text-7xl text-[#022252]">
                           Creating Software <br /> & Digital Excellence.
                         </h1>
-                        <p className="mt-2 mb-16 font-medium tracking-tight md:text-sm xl:text-sm text-[#0D0E13C2]">
+                        <p className=" font-medium text-[5px] w-40 lg:w-full tracking-tight md:text-sm xl:text-sm text-[#0D0E13C2] lg:text-base">
                           Lorem ipsum dolor sit amet consectetur. Faucibus
                           porttitor non mi enim sapien integer integer. Iaculis
                           nec vitae ut vel non neque cras turpis facilisis. Leo
@@ -94,26 +96,33 @@ const LandingPage = () => {
                           Nisl donec molestie eget dictum et donec pharetra
                           tristique semper.
                         </p>
-                        <Button name="Get Started" />
+                        <div className="">
+                          <Button name="Get Started" />
+                        </div>
                       </div>
 
-                      <div className="col-span-4 lg:col-span-5  justify-end flex absolute top-[-50px] left-[1000px]">
+                      <div className="absolute lg:left-[600px] lg:w-60 lg:ml-36 bg-orange-500 ">
                         <img
-                          className="h-[700px] w-[400px] text-end  md:h-[500px] md:w-[300px] "
                           src={humanimg}
                           alt=""
+                          className="aspect-auto  lg:h-96 absolute top-6"
                         />
                       </div>
                     </div>
                   </div>
-                  <div className="md:h-[150px] md:w-[100px]">
+                  <div className="md:h-[150px] md:w-[100px] lg:w-72 lg:h-40">
                     <img
                       src={thred}
                       alt=""
-                      className="absolute top-[440px] left-[220px] h-[210px] w-[380px] rotate-[-7deg]"
+                      className="absolute rotate-[-7deg] h-2 lg:h-70 lg:w-64 lg:top-[100px] lg:right-[0px] "
                     />
-                    <div className=" absolute top-[100px] left-1">
-                      <Blockimg />
+
+                    <div className="absolute lg:right-[370px] lg:top-96 lg:left-96 left-40">
+                      <img
+                        src={reviewimg}
+                        alt=""
+                        className=" lg:h-28 lg:w-72 h-14 w-28"
+                      />
                     </div>
                   </div>
                 </section>
@@ -122,13 +131,16 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <CarouselLogo/>
-      <Services/>
-      <PortfolioComp/>
-      <ClientCardComp/>
-      <CompanyStatBar/>
-      <NewsLetter/>
-      <Footer/>
+
+      <CarouselLogo />
+      <Services />
+      <PortfolioComp />
+
+      <ClientCardComp />
+
+      <CompanyStatBar />
+      <NewsLetter />
+      <Footer />
     </>
   );
 };

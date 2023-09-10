@@ -3,21 +3,21 @@ import Button from "./Button";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto p-16 ">
+    <div className=" container p-5 lg:p-16 ">
       <div className="lg:flex">
-        <div className="xl:w-2/5 lg:w-2/5 bg-[#642B73] py-16 xl:rounded-bl xl:items-center xl:flex xl:rounded-tr-none xl:py-24 rounded-tl-[25%]">
-          <div className="xl:w-5/6 xl:px-0 px-8 mx-auto ">
-            <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
+        <div className="xl:w-2/5 lg:w-2/5 bg-[#642B73] lg:py-16 py-10 xl:rounded-bl xl:items-center xl:flex xl:rounded-tr-none xl:py-24 rounded-tl-[25%] rounded-tr-xl lg:rounded-tr-none">
+          <div className="xl:w-5/6 xl:px-0  px-6 lg:px-8 mx-auto ">
+            <h1 className="xl:text-4xl text-xl lg:text-3xl lg:pb-4 text-white font-bold">
               Contact us
             </h1>
-            <p className="text-xl text-white pb-8 leading-relaxed font-normal lg:pr-4">
+            <p className="lg:text-xl text-white lg:pb-8 lg:leading-relaxed font-normal text-sm lg:pr-4">
               Got a question about us? Are you interested in partnering with us?
               Have some suggestions or just want to say Hi? Just contact us. We
               are here to asset you.
             </p>
             <div className="flex pb-4 items-center">
               <div>
-                <ul className="flex justify-center gap-6 sm:justify-start md:gap-8 mt-4 mr-72">
+                <ul className="flex justify-center gap-6 sm:justify-start md:gap-8 ">
                   <li>
                     <a
                       href="/"
@@ -88,16 +88,19 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="xl:w-3/5 lg:w-3/5 bg-[#642B73] h-full pt-5 pb-5 xl:pr-5 xl:pl-0 xl:py-24 rounded-tr  rounded-br-[25%]">
-          <form id="contact" className="bg-white py-4 px-8  rounded-2xl ">
-            <h1 className="text-4xl text-gray-800 font-extrabold mb-3">
+        <div className="xl:w-3/5 lg:w-3/5 bg-[#642B73] rounded-bl-xl lg:rounded-bl-none  h-full pt-5 pb-5 xl:pr-5 xl:pl-0 xl:py-24  lg:flex lg:flex-col p-5 lg:p-16 rounded-br-[25%] lg:rounded-br-[25%]">
+          <form
+            id="contact"
+            className="bg-white p-3 pb-8 md:rounded-br-[25%] md:w-[600px] py-4  flex flex-col   rounded-2xl  lg:w-96 rounded-br-[25%]"
+          >
+            <h1 className="lg:text-4xl text-gray-800 font-extrabold mb-3">
               Get in touch
             </h1>
-            <h1 className="text-xl text-gray-800 font-semibold mb-8">
+            <h1 className="lg:text-xl text-xs text-gray-800 font-semibold mb-8">
               We’d Love To Hear From You!
             </h1>
 
-            <div className="block xl:flex w-full flex-wrap justify-between mb-6">
+            <div className="block lg:flex w-full flex-wrap justify-between mb-6">
               <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
                 <div className="relative z-0">
                   <input
@@ -127,7 +130,7 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div className="block xl:flex w-full flex-wrap justify-between mb-6">
+            <div className="  lg:flex w-full flex-wrap  justify-between mb-6">
               <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
                 <div className="relative z-0">
                   <input

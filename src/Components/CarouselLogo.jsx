@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import img1 from "..//assets/Figure → Link → Quora.png.svg";
 import img2 from "..//assets/Figure → Link → Google-Main.png.svg";
@@ -28,7 +28,8 @@ export default function CarouselLogo() {
   return (
     <div className="container mx-auto">
       <Partners name="Our Trusted Partner" />
-      <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 mobile:py-3 px-4">
+
+      <div className="flex items-center justify-center w-full h-full lg:py-3  sm:py-0 mobile:py-0 px-0  ">
         {/* Carousel for desktop and large size devices */}
         <CarouselProvider
           className="lg:block hidden"
@@ -322,7 +323,7 @@ export default function CarouselLogo() {
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
           totalSlides={12}
-          visibleSlides={5}
+          visibleSlides={6}
           step={1}
           infinite={true}
         >
@@ -333,7 +334,7 @@ export default function CarouselLogo() {
               className="absolute z-30 left-0 ml- focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
               id="prev"
             >
-              <img src={arrow1} alt="" className="h-8" />
+              <img src={arrow1} alt="" className="h-5" />
             </ButtonBack>
 
             <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
@@ -417,35 +418,8 @@ export default function CarouselLogo() {
                   <Slide index={8}>
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
-                        src={img8}
+                        src={img1}
                         alt="black chair and white table"
-                        className="object-cover object-center w-full"
-                      />
-                    </div>
-                  </Slide>
-                  <Slide index={9}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                      <img
-                        src={img8}
-                        alt="sitting area"
-                        className="object-cover object-center w-full"
-                      />
-                    </div>
-                  </Slide>
-                  <Slide index={10}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                      <img
-                        src={img8}
-                        alt="sitting area"
-                        className="object-cover object-center w-full"
-                      />
-                    </div>
-                  </Slide>
-                  <Slide index={11}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                      <img
-                        src={img8}
-                        alt="sitting area"
                         className="object-cover object-center w-full"
                       />
                     </div>
@@ -460,7 +434,7 @@ export default function CarouselLogo() {
               className="absolute z-30 right-0 mr- focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 "
               id="next"
             >
-              <img src={arrow2} alt="" className="h-8 " />
+              <img src={arrow2} alt="" className="h-5 " />
             </ButtonNext>
           </div>
         </CarouselProvider>

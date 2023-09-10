@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 import logo from "../assets/Frame 1000002387.svg";
 import Button from "./Button";
-import { Link, Routes } from "react-router-dom";
-import ContactUsPage from "../Pages/ContactUsPage";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,6 +13,7 @@ const Navbar = () => {
 
   return (
     <>
+      {/*<!-- Component: Navbar with--> */}
       <header className="border-b-1 relative z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
@@ -19,6 +21,7 @@ const Navbar = () => {
             className="flex h-[6.5rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
+            {/*      <!-- Brand logo --> */}
             <a
               id="WindUI"
               aria-label="WindUI logo"
@@ -26,17 +29,18 @@ const Navbar = () => {
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               href="javascript:void(0)"
             >
-              <img src={logo} alt="" />
+              <img src={logo} alt="" className="lg:h-10" />
             </a>
 
+            {/*      <!-- Mobile trigger --> */}
             <button
               className={`relative order-10 block h-10 w-10 self-center lg:hidden
-                ${
-                  isToggleOpen
-                    ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
-                    : ""
-                }
-              `}
+            ${
+              isToggleOpen
+                ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
+                : ""
+            }
+          `}
               onClick={() => setIsToggleOpen(!isToggleOpen)}
               aria-expanded={isToggleOpen ? "true" : "false"}
               aria-label="Toggle navigation"
@@ -57,6 +61,7 @@ const Navbar = () => {
               </div>
             </button>
 
+            {/*      <!-- Navigation links --> */}
             <ul
               role="menubar"
               aria-label="Select page"
@@ -68,34 +73,23 @@ const Navbar = () => {
             >
               <li role="none" className="flex items-stretch">
                 <Link
-                  to={"/AboutUsPage"}
+                  to={"/LandingPage"}
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#333333] focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
                   href="javascript:void(0)"
                 >
-                  <span className="text-[#BC374E]">About Us</span>
+                  <span>Home</span>
                 </Link>
               </li>
 
               <li role="none" className="flex items-stretch">
-                {/* <a
-                  role="menuitem"
-                  aria-current="page"
-                  aria-haspopup="false"
-                  tabIndex="0"
-                  className="flex items-center gap-2 py-4 text-[#333333] transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
-                >
-                  <span>Services</span>
-                </a> */}
-
                 <div className="flex justify-center mt-6">
                   <div onMouseLeave={() => setOpen(false)} className="relative">
                     <button
                       onMouseOver={() => setOpen(true)}
-                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-800 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-800 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-1  lg:mt-0"
                     >
                       <span className="mr-2">Services</span>
                       <svg
@@ -113,6 +107,7 @@ const Navbar = () => {
                         />
                       </svg>
                     </button>
+
                     <ul
                       className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
                         open ? "block" : "hidden"
@@ -120,7 +115,6 @@ const Navbar = () => {
                     >
                       <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
                         <Link to={"/MobileAppDevlopment"}>
-                          {" "}
                           Mobile App Development
                         </Link>
                       </li>
@@ -140,7 +134,7 @@ const Navbar = () => {
                   <div onMouseLeave={() => setOpen(false)} className="relative">
                     <button
                       onMouseOver={() => setOpen(true)}
-                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-800 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-1  lg:mt-0 "
                     >
                       <span className="mr-2">Company</span>
                       <svg
@@ -158,19 +152,20 @@ const Navbar = () => {
                         />
                       </svg>
                     </button>
+
                     <ul
                       className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
                         open ? "block" : "hidden"
                       }`}
                     >
                       <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
-                        <Link to={"/"}> About Us</Link>
+                        <Link to={"/AboutUsPage"}> About Us</Link>
                       </li>
                       <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
                         <Link to={"/PrivacyPolicy"}>Privacy Policy</Link>
                       </li>
                       <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
-                        <Link to={"/TermsofServices"}> Terms of Service</Link>
+                        <Link to={"/PrivacyPolicy"}>Privacy Policy</Link>
                       </li>
                       <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
                         <Link to={"/FeedBackPage"}> Feedback Form</Link>
@@ -181,36 +176,45 @@ const Navbar = () => {
               </li>
 
               <li role="none" className="flex items-stretch">
-                <a
+                <ScrollLink
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={900}
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 text-[#333333] transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
                 >
                   <span>Portfolio</span>
-                </a>
+                </ScrollLink>
               </li>
+
               <li role="none" className="flex items-stretch">
-                <a
+                <ScrollLink
+                  to="testimonial"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={900}
                   role="menuitem"
-                  aria-current="page"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 text-[#333333] transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
                 >
                   <span>Testimonial</span>
-                </a>
+                </ScrollLink>
               </li>
+
               <li role="none" className="flex items-stretch">
                 <Link
                   to={"/ContactUs"}
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-[#333333] focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-"
                   href="javascript:void(0)"
                 >
                   <span>Contact Us</span>
@@ -218,18 +222,13 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0 xl::hidden ">
-              <ul role="menubar" aria-label="Select page" className="">
-                <li role="none" className="flex items-stretch">
-                  <a>
-                    <Button name="Get Started" />
-                  </a>
-                </li>
-              </ul>
+            <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
+              <Button name="Get Started" />
             </div>
           </nav>
         </div>
       </header>
+      {/*<!-- End Navbar --> */}
     </>
   );
 };
