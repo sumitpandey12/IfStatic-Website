@@ -1,50 +1,35 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
+// import React from "react";
 
-import CarouselLogo from "./Components/CarouselLogo";
-import AboutUs from "./Components/AboutUs";
+import { Routes, Route } from "react-router-dom";
 
-import Services from "./Components/Services";
-
-import PortfolioComp from "./Components/PortfolioComp";
-import ClientCardComp from "./Components/ClientCardComp";
-import CompanyStatBar from "./Components/CompanyStatBar";
-import ContactUs from "./Components/ContactUs";
-import NewsLetter from "./Components/NewsLetter";
-import Footer from "./Components/Footer";
-import LandingPage from "./Pages/LandingPage";
+import AboutUsPage from "./Pages/AboutUsPage";
 import ContactUsPage from "./Pages/ContactUsPage";
 import FeedBackPage from "./Pages/FeedBackPage";
-import Layout from "./Components/Layout";
-import AboutUsPage from "./Pages/AboutUsPage";
-import Layout2 from "./Components/Layout2";
+import LandingPage from "./Pages/LandingPage";
+import MobileAppDevelopmentPage from "./Pages/MobileAppDevelopmentPage";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsOfServices from "./Pages/TermsOfServices";
 import UXDesignPage from "./Pages/UXDesignPage";
-import Layout3 from "./Components/Layout3";
 import WebDevelopmentPage from "./Pages/WebDevelopmentPage";
 
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <LandingPage /> */}
-      {/* <CarouselLogo />
-      <AboutUs /> */}
-      {/* <Services /> */}
-      {/* <PortfolioComp />
-      <ClientCardComp />
-      <CompanyStatBar />
-      <ContactUs />
-      <NewsLetter /> */}
-
-      {/* <Footer /> */}
-
-      {/* <ContactUsPage/> */}
-      {/* <FeedBackPage/> */}
-      {/* <Layout/> */}
-      {/* <AboutUsPage/> */}
-      {/* <Layout3/> */}
-      {/* <UXDesignPage/> */}
-      <WebDevelopmentPage/>
+      <Routes>
+        <Route index element={<LandingPage />} />
+        <Route path="/LandingPage" element={<LandingPage />} />
+        <Route path="/AboutUsPage" element={<AboutUsPage />} />
+        <Route path="/FeedBackPage" element={<FeedBackPage />} />
+        <Route
+          path="/MobileAppDevlopment"
+          element={<MobileAppDevelopmentPage />}
+        />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermsofServices" element={<TermsOfServices />} />
+        <Route path="/UxDevelopment" element={<UXDesignPage />} />
+        <Route path="/WebDevelopment" element={<WebDevelopmentPage />} />
+        <Route path="/ContactUs" element={<ContactUsPage />} />
+      </Routes>
     </>
   );
 };

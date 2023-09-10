@@ -2,9 +2,14 @@ import { useState } from "react";
 
 import logo from "../assets/Frame 1000002387.svg";
 import Button from "./Button";
+import { Link, Routes } from "react-router-dom";
+import ContactUsPage from "../Pages/ContactUsPage";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+
   return (
     <>
       <header className="border-b-1 relative z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
@@ -62,7 +67,8 @@ const Navbar = () => {
               }`}
             >
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
+                  to={"/AboutUsPage"}
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
@@ -70,10 +76,11 @@ const Navbar = () => {
                   href="javascript:void(0)"
                 >
                   <span className="text-[#BC374E]">About Us</span>
-                </a>
+                </Link>
               </li>
+
               <li role="none" className="flex items-stretch">
-                <a
+                {/* <a
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
@@ -82,8 +89,97 @@ const Navbar = () => {
                   href="javascript:void(0)"
                 >
                   <span>Services</span>
-                </a>
+                </a> */}
+
+                <div className="flex justify-center mt-6">
+                  <div onMouseLeave={() => setOpen(false)} className="relative">
+                    <button
+                      onMouseOver={() => setOpen(true)}
+                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-800 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      <span className="mr-2">Services</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+                        open ? "block" : "hidden"
+                      }`}
+                    >
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/MobileAppDevlopment"}>
+                          {" "}
+                          Mobile App Development
+                        </Link>
+                      </li>
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/WebDevelopment"}>Web Development</Link>
+                      </li>
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/UxDevelopment"}> UI UX Design</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
+
+              <li role="none" className="flex items-stretch">
+                <div className="flex justify-center mt-6">
+                  <div onMouseLeave={() => setOpen(false)} className="relative">
+                    <button
+                      onMouseOver={() => setOpen(true)}
+                      className="flex   p-2 bg-white  rounded-md  items-center gap-2 py-4 text-[#333333] transition-colors duration-300 hover:text-emerald-600 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      <span className="mr-2">Company</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+                        open ? "block" : "hidden"
+                      }`}
+                    >
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/"}> About Us</Link>
+                      </li>
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/PrivacyPolicy"}>Privacy Policy</Link>
+                      </li>
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/TermsofServices"}> Terms of Service</Link>
+                      </li>
+                      <li className="flex w-full items-center px-3 py-4 text-sm hover:bg-gray-100">
+                        <Link to={"/FeedBackPage"}> Feedback Form</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
               <li role="none" className="flex items-stretch">
                 <a
                   role="menuitem"
@@ -109,7 +205,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
+                  to={"/ContactUs"}
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
@@ -117,7 +214,7 @@ const Navbar = () => {
                   href="javascript:void(0)"
                 >
                   <span>Contact Us</span>
-                </a>
+                </Link>
               </li>
             </ul>
 

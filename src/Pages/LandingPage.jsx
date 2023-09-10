@@ -1,10 +1,19 @@
 import hero from "../assets/Hero.svg";
+// import { Routes, Route } from "react-router-dom";
 
 import humanimg from "../assets/human.svg";
 import Button from "../Components/Button";
 import thred from "../assets/thread.svg";
 import circle from "../assets/image-removebg-preview - 2023-02-19T191726.svg";
 import Blockimg from "../Components/Blockimg";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import CarouselLogo from "../Components/CarouselLogo";
+import Services from "../Components/Services";
+import PortfolioComp from "../Components/PortfolioComp";
+import ClientCardComp from "../Components/ClientCardComp";
+import CompanyStatBar from "../Components/CompanyStatBar";
+import NewsLetter from "../Components/NewsLetter";
 
 const LandingPage = () => {
   return (
@@ -63,6 +72,7 @@ const LandingPage = () => {
     // </> 
 
     <>
+    <Navbar/>
       <section>
         <div className="relative overflow-hidden bg-cover bg-no-repeat flex h-full">
           <img src={hero} alt="" />
@@ -89,7 +99,7 @@ const LandingPage = () => {
 
                       <div className="col-span-4 lg:col-span-5  justify-end flex absolute top-[-50px] left-[1000px]">
                         <img
-                          className="h-[700px] w-[400px] text-end  "
+                          className="h-[700px] w-[400px] text-end  md:h-[500px] md:w-[300px] "
                           src={humanimg}
                           alt=""
                         />
@@ -112,6 +122,13 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      <CarouselLogo/>
+      <Services/>
+      <PortfolioComp/>
+      <ClientCardComp/>
+      <CompanyStatBar/>
+      <NewsLetter/>
+      <Footer/>
     </>
   );
 };
